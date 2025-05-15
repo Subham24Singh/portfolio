@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subham Singh Tanwar - Portfolio</title>
+    <link rel="stylesheet" href="styles2.css">git pull origin main --rebase
+    
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="profile-pic-container">
+                <img id="profilePic" src="image/profile.jpg" alt="Profile Pic">
+                <div class="overlay">View Profile</div>
+            </div>
+            <h2>Subham Singh Tanwar</h2>
+            <p>Chandigarh, India</p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/subham-singh-tanwar-794233294/" target="_blank">LinkedIn</a>
+                <a href="https://www.codechef.com/users/subham_singh24" target="_blank">CodeChef</a>
+                <a href="https://github.com/Subham24Singh" target="_blank">GitHub</a>
+            </div>
+
+            <a href="resume/subham's_resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+
+        <!-- Right Content Area -->
+        <div class="content">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#Certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a Software Engineering student at Chandigarh University with expertise in C, C++, Python, Java, and SQL.<br>
+        I am passionate about software development, competitive programming, web development, and problem-solving.<br>
+         I love exploring new technologies and contributing to open-source projects.</p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <ul>
+                    <li>B.E. Software Engineering - Chandigarh University (2023 - Present)</li>
+                    <li>Senior Secondary (12th) - Army Public School (PCM with Computer Science)</li>
+                    <li>Secondary (10th) - Army Public School</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Languages: Python, C, C++, Java, SQL</li>
+                    <li>Frameworks: Data Structures, DBMS</li>
+                    <li>Tools: VS Code, Eclipse</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>Arduino-based Device Controlling System on Ubidots</li>
+                    <li>Online Quiz System using Node.js, Express, MySQL</li>
+                    <li>Augmented Reality Virtual Try-On App (Prototype)</li>
+                </ul>
+            </section>
+
+            <section id="Certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Data Visualisation - TCS</li>
+                    <li>Time Management -  LinkedIn</li>
+                    <li>Interfacing with Arduino -  Coursera</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: subhamsinght2234@gmail.com</p>
+                <p>Phone: +91 7015544540</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Modal for Image -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Get elements
+        const profilePic = document.getElementById("profilePic");
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.getElementsByClassName("close")[0];
+
+        // When image clicked
+        profilePic.onclick = function(){
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        }
+
+        // When close button clicked
+        closeBtn.onclick = function(){
+            modal.style.display = "none";
+        }
+
+        // Close modal on clicking outside the image
+        modal.onclick = function(event){
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
