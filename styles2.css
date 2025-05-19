@@ -150,16 +150,14 @@ section li {
     font-size: 16px;
 }
 
-/* Uniform list styling across sections */
 ul {
     list-style-type: disc;
-    padding-left: 20px;  /* Uniform padding */
-    margin-left: 0;      /* Remove default margin */
+    padding-left: 20px;  
+    margin-left: 0;      
     color: #ecefca;
     font-size: 16px;
 }
 
-/* Certifications section fix (make sure ID is lowercase in HTML) */
 #certifications ul {
     padding-left: 20px;
     margin-left: 0;
