@@ -150,20 +150,32 @@ section li {
     font-size: 16px;
 }
 
-/* Uniform list styling */
+/* Uniform list styling across sections */
 ul {
     list-style-type: disc;
-    margin-left: 20px;
+    padding-left: 20px;  /* Uniform padding */
+    margin-left: 0;      /* Remove default margin */
     color: #ecefca;
     font-size: 16px;
 }
 
-#Certifications ul {
+/* Certifications section fix (make sure ID is lowercase in HTML) */
+#certifications ul {
     padding-left: 20px;
+    margin-left: 0;
 }
 
-#Certifications ul li {
+#certifications ul li {
     margin-bottom: 10px;
+}
+
+#certifications a {
+    color: #70d6ff;
+    text-decoration: underline;
+}
+
+#certifications a:hover {
+    color: #ffffff;
 }
 
 /* Smooth Scroll */
